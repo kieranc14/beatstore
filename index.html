@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+        
+        body {
+            font-family: OCR A Std, monospace;
+
+        }
+        /* Style the header */
+        
+        header {
+            background-color: #732535;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            border-radius:8px;
+
+        }
+        /* Container for flexboxes */
+        
+        section {
+            display: -webkit-flex;
+            display: inline-flex;
+            width:100%;
+            padding: 6px;
+
+        }
+        /* Style the navigation menu */
+        
+        nav {
+            
+            
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            background: black;
+            
+            padding: 6px;
+            border-radius:20px;
+        }
+
+        
+
+        /* Style the footer */
+        
+        footer {
+            background-color: #732535;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            border-radius:8px;
+        }
+        /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+        
+        @media (max-width: 600px) {
+            section {
+                -webkit-flex-direction: column;
+                flex-direction: column;
+            }
+        }
+
+        
+
+
+
+
+        
+
+        .row1 {
+        	text-align:left;
+        	padding: 10px;
+
+        }
+
+        .row2 {
+        	text-align:left;
+
+        }
+
+        .songtitle {
+        	background-color: FireBrick; /* Changing background color */
+		    color: white;
+		    font-weight: bold; /* Making font bold */
+		    border-radius: 10px; /* Making border radius */		    
+		    padding: 5px 10px 5px 10px; /* Making space around letters */
+		    font-size: 18px; /* Changing font size */
+
+        }
+
+        .bpm {
+        	color:white;
+        	font-size: 16px;
+        }
+
+        .vibe {
+        	background-color: white; /* Changing background color */
+		    color: black;
+		    font-weight: normal; /* Making font bold */
+		    border-radius: 15px; /* Making border radius */		    
+		    padding: 3px 6px 3px 6px; /* Making space around letters */
+		    font-size: 14px; /* Changing font size */
+            display:inline-block;
+        }
+
+        .leaseTitle {
+
+        	color:white;
+        	font-size: 13px;
+        	text-align:left;
+
+        }
+
+        .cost {
+        	font-size:20px;
+        }
+
+        #tableSection2 {
+        	width: 66%;
+        	min-width: 400px;
+        }
+
+        hr { 
+        	border-top: 3px double #8c8b8b;
+        	margin-right: 100px
+        	margin-left: 100px;
+		}
+
+		@media (max-width: 420px) {
+            section {
+                -webkit-flex-direction: column;
+                flex-direction: column;
+            }
+
+            #tableSection2 {
+            	width: 66%;
+        		min-width: 200px;
+            }
+
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+
+    
+
+    <header>
+        <h2>McFlizzurp Productions</h2>
+    </header>
+    
+
+
+    <section>
+        <nav>
+
+        	<table style="width:100%">
+			    <tr>
+			        <th class="row1" width="15%"><span class="songtitle">Blast Off</span><span class="bpm"> 140 BPM</span></th>
+			        <th class="row1" width="10%"></th>
+			        <th class="leaseTitle">Basic Lease <span class="cost">($10)</span></th>
+			        <th class="leaseTitle">Standard Lease <span class="cost">($20)</span></th>
+			        <th class="leaseTitle">Trackout Lease <span class="cost">($30)</span></th>
+			        <th class="leaseTitle">Unlimited Lease <span class="cost">($60)</span></th>
+			        <th class="leaseTitle">Exclusive <span class="cost"></span></th>
+			    </tr>
+			    <tr>
+			        <td><audio class="audio" src="GTR (FINISHED).mp3" controls preload></audio></td>
+			        <td class="row2"><span class="vibe">INTENSE • DARK</span></td>
+			    </tr>
+			    <tr>
+			        <td></td>
+			    </tr>
+			</table>
+            
+            
+
+        </nav>
+
+    </section>
+
+    
+    <section>
+        <nav>
+
+
+            <table style="width:450px; display: inline-block; float: left;">
+    		    <tr>
+    		        <td class="row1" width="400px"><span class="songtitle">Blast Off</span><span class="bpm"> 140 BPM  </span><span class="vibe">INTENSE • DARK</span></td>
+    		        <td class="row1" width="10%"></td>
+
+    		        
+    		    </tr>
+    		    <tr>
+    		        <td><audio class="audio" src="GTR (FINISHED).mp3" controls preload></audio></td>
+    		        
+    		    </tr>
+    		    <tr>
+    		        <td></td>
+    		    </tr>
+    		</table>
+        	<table id="tableSection2">
+        		<tr>
+
+        		    <td class="leaseTitle">Minimal <span class="cost">($10)</span></td>
+        		    <td class="leaseTitle">Standard <span class="cost">($20)</span></td>
+        		    <td class="leaseTitle">Trackout <span class="cost">($30)</span></td>
+        		    <td class="leaseTitle">Unlimited <span class="cost">($60)</span></td>
+
+        	    </tr>
+        	    <tr>
+        		        
+    		    </tr>
+        	    <tr>
+        	        <td></td>
+        	    </tr>
+        	</table>
+            
+         
+
+			
+            
+            
+
+        </nav>
+
+    </section>  
+
+
+    <footer>
+        <p>Licensing Info</p>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+
+        $(function(){
+            $("audio").on("play", function() {
+                $("audio").not(this).each(function(index, audio) {
+                    audio.pause();
+                });
+            });
+        });
+
+    </script>    
+</body>
+
+</html>
