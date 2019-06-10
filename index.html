@@ -103,18 +103,19 @@
 		    border-radius: 15px; /* Making border radius */		    
 		    padding: 3px 6px 3px 6px; /* Making space around letters */
 		    font-size: 14px; /* Changing font size */
+            display:inline-block;
         }
 
         .leaseTitle {
 
         	color:white;
-        	font-size: 14px;
+        	font-size: 13px;
         	text-align:left;
 
         }
 
         .cost {
-        	font-size:24px;
+        	font-size:20px;
         }
 
         hr { 
@@ -127,6 +128,7 @@
 </head>
 
 <body>
+
 
     
 
@@ -150,7 +152,7 @@
 			        <th class="leaseTitle">Exclusive <span class="cost"></span></th>
 			    </tr>
 			    <tr>
-			        <td><audio class="audio" src="https://clyp.it/ziqgxgy0" controls preload></audio></td>
+			        <td><audio class="audio" src="GTR (FINISHED).mp3" controls preload></audio></td>
 			        <td class="row2"><span class="vibe">INTENSE • DARK</span></td>
 			    </tr>
 			    <tr>
@@ -171,26 +173,27 @@
 
             <table style="width:450px; display: inline-block; float: left;">
     		    <tr>
-    		        <td class="row1" width="15%"><span class="songtitle">Blast Off</span><span class="bpm"> 140 BPM</span></th>
-    		        <td class="row1" width="10%"></th>
+    		        <td class="row1" width="400px"><span class="songtitle">Blast Off</span><span class="bpm"> 140 BPM  </span><span class="vibe">INTENSE • DARK</span></td>
+    		        <td class="row1" width="10%"></td>
+
     		        
     		    </tr>
     		    <tr>
-    		        <td><audio class="audio" src="https://soundcloud.com/user-976703175/rappin-bout-my-life" controls preload></audio></td>
-    		        <td class="row2"><span class="vibe">INTENSE • DARK</span></td>
+    		        <td><audio class="audio" src="GTR (FINISHED).mp3" controls preload></audio></td>
+    		        
     		    </tr>
     		    <tr>
     		        <td></td>
     		    </tr>
     		</table>
-        	<table style="width: 66%; min-width: 450px;">
+        	<table style="width: 66%; min-width: 400px;">
         		<tr>
 
-        		    <td class="leaseTitle">Minimal Lease wrtvffO <span class="cost">($10)</span></th>
-        		    <td class="leaseTitle">Standard Lease <span class="cost">($20)</span></th>
-        		    <td class="leaseTitle">Trackout Lease <span class="cost">($30)</span></th>
-        		    <td class="leaseTitle">Unlimited Lease <span class="cost">($60)</span></th>
-        	        <td class="leaseTitle">Exclusive <span class="cost"></span></th>
+        		    <td class="leaseTitle">Minimal <span class="cost">($10)</span></td>
+        		    <td class="leaseTitle">Standard <span class="cost">($20)</span></td>
+        		    <td class="leaseTitle">Trackout <span class="cost">($30)</span></td>
+        		    <td class="leaseTitle">Unlimited <span class="cost">($60)</span></td>
+
         	    </tr>
         	    <tr>
         		        
@@ -215,6 +218,19 @@
         <p>Licensing Info</p>
     </footer>
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+
+        $(function(){
+            $("audio").on("play", function() {
+                $("audio").not(this).each(function(index, audio) {
+                    audio.pause();
+                });
+            });
+        });
+
+    </script>    
 </body>
 
 </html>
