@@ -70,6 +70,22 @@
             }
         }
 
+        @media (max-width: 420px) {
+            section {
+                -webkit-flex-direction: column;
+                flex-direction: column;
+            }
+
+            #tableSection2 {
+            	width: 66%;
+        		min-width: 200px;
+            }
+
+
+
+
+        }
+
         .row1 {
         	text-align:left;
         	padding: 10px;
@@ -116,6 +132,11 @@
 
         .cost {
         	font-size:20px;
+        }
+
+        #tableSection2 {
+        	width: 66%;
+        	min-width: 400px;
         }
 
         hr { 
@@ -186,7 +207,7 @@
     		        <td></td>
     		    </tr>
     		</table>
-        	<table style="width: 66%; min-width: 400px;">
+        	<table id="tableSection2">
         		<tr>
 
         		    <td class="leaseTitle">Minimal <span class="cost">($10)</span></td>
